@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+	<title></title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<!-- Font awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- == icon == -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+	<!-- css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- ===== Boxicons CSS ===== -->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<!-- ===== For Site Icon ===== -->
+	<link rel="icon" type="image/x-icon" href="/images/icon.png">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		.desktop_hide,
+		.desktop_hide table {
+
+			display: none;
+			max-height: 0px;
+			overflow: hidden;
+		}
+
+		.image_block img+div {
+			display: none;
+		}
+
+		@media (max-width:700px) {
+			.desktop_hide table.icons-inner {
+				display: inline-block !important;
+			}
+
+			.icons-inner {
+				text-align: center;
+			}
+
+			.icons-inner td {
+				margin: 0 auto;
+			}
+
+			.mobile_hide {
+				display: none;
+			}
+
+			.row-content {
+				width: 100% !important;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+
+			.mobile_hide {
+				min-height: 0;
+				max-height: 0;
+				max-width: 0;
+				overflow: hidden;
+				font-size: 0px;
+			}
+
+			.desktop_hide,
+			.desktop_hide table {
+				display: table !important;
+				max-height: none !important;
+			}
+
+			.row-1 .column-1 .block-2.heading_block h1,
+			.row-2 .column-1 .block-1.heading_block h2,
+			.row-2 .column-1 .block-3.heading_block h2 {
+				text-align: left !important;
+			}
+
+			.row-1 .column-1 .block-2.heading_block h1 {
+				font-size: 32px !important;
+			}
+
+			.row-1 .column-1 .block-3.paragraph_block td.pad>div {
+				text-align: left !important;
+				font-size: 14px !important;
+			}
+
+			.row-2 .column-1 .block-1.heading_block h2,
+			.row-2 .column-1 .block-3.heading_block h2 {
+				font-size: 20px !important;
+			}
+
+			.row-2 .column-1 .block-2.paragraph_block td.pad>div,
+			.row-2 .column-1 .block-4.paragraph_block td.pad>div {
+				text-align: left !important;
+				font-size: 16px !important;
+			}
+
+			.row-3 .column-1 .block-2.spacer_block,
+			.row-4 .column-1 .block-1.spacer_block {
+				height: 40px !important;
+			}
+
+			.row-1 .column-1 {
+				padding: 0 24px 16px !important;
+			}
+
+			.row-2 .column-1 {
+				padding: 0 24px !important;
+			}
+		}
+	</style>
+</head>
+
+<body style="background-color: #f8f6ff; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+	<nav>
+		<div class="nav-bar">
+			<i class='bx bx-menu sidebarOpen'></i>
+			<span class="logo navLogo"><a href="Home.html">HashyBot</a></span>
+
+			<div class="menu">
+				<div class="logo-toggle">
+					<span class="logo"><a href="Home.html">HashyBot</a></span>
+					<i class='bx bx-x siderbarClose'></i>
+				</div>
+
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="Chat.html">AI Chat</a></li>
+					<li><a href="how.html">How to use</a></li>
+				</ul>
+			</div>
+
+			<div class="darkLight-searchBox">
+				<div class="dark-light">
+					<i class='bx bx-moon moon'></i>
+					<i class='bx bx-sun sun'></i>
+				</div>
+
+				<div class="searchBox">
+					<div class="searchToggle">
+						<i class='bx bx-x cancel'></i>
+						<i class='bx bx-search search'></i>
+					</div>
+
+					<div class="search-field">
+						<input type="text" placeholder="Search...">
+						<i class='bx bx-search'></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<script src="script1.js"></script>
+	<br>
+	<table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation"
+		style="background-color: #f8f6ff; background-image: none; background-position: top left; background-size: auto; background-repeat: no-repeat;"
+		width="100%">
+		<tbody>
+			<tr>
+				<td>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-1"
+						role="presentation" width="100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation"
+										style="background-color: #ffffff; border-radius: 0; color: #000000; width: 680px; margin: 0 auto;"
+										width="680">
+										<tbody>
+											<tr>
+												<td class="column column-1"
+													style="   font-weight: 400; text-align: left; padding-left: 48px; padding-right: 48px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
+													width="100%">
+													<div class="spacer_block block-1"
+														style="height:48px;line-height:48px;font-size:1px;"> </div>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="heading_block block-2" role="presentation" width="100%">
+														<tr>
+															<td class="pad"
+																style="padding-bottom:8px;text-align:center;width:100%;">
+																<h1
+																	style="margin: 0; color: #292929; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	<span class="tinyMce-placeholder"><strong>Unleash
+																			Your Creativity: A Beginner's Guide to AI
+																			Image Generators</strong></span>
+																</h1>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-3" role="presentation"
+														style="   word-break: break-word;" width="100%">
+														<tr>
+															<td class="pad" style="padding-bottom:12px;">
+																<div
+																	style="color:black;direction:ltr;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;">
+																	<p style="margin: 0;">Welcome to the exciting world
+																		of AI image generation! Ever wished you could
+																		turn your wildest dreams into stunning visuals?
+																		With AI image generators, that's becoming a
+																		reality. This guide is your first step into this
+																		incredible creative realm.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="image_block block-4" role="presentation" width="100%">
+														<tr>
+															<td class="pad" style="width:100%;">
+																<div align="center" class="alignment"
+																	style="line-height:10px">
+																	<div style="max-width: 584px;"><img
+																			src="images/newsletter-image-cover.png"
+																			style="display: block; height: auto; border: 0; width: 100%;"
+																			width="584" /></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-2"
+						role="presentation" width="100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation"
+										style="   background-color: #ffffff; border-radius: 0; color: #000000; width: 680px; margin: 0 auto;"
+										width="680">
+										<tbody>
+											<tr>
+												<td class="column column-1"
+													style="   font-weight: 400; text-align: left; padding-left: 48px; padding-right: 48px; padding-top: 48px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
+													width="100%">
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="heading_block block-1" role="presentation" width="100%">
+														<tr>
+															<td class="pad" style="text-align:center;width:100%;">
+																<h2
+																	style="margin: 0; color: #000000; direction: ltr; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	<strong>What is an AI Image Generator?</strong>
+																</h2>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-2" role="presentation"
+														style="   word-break: break-word;" width="100%">
+														<tr>
+															<td class="pad" style="padding-top:16px;">
+																<div
+																	style="color:black;direction:ltr;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;  ">
+																	<p style="margin: 0;">Imagine a powerful tool that
+																		can take your words and transform them into
+																		unique images. That's the magic of AI image
+																		generators. These programs use artificial
+																		intelligence to analyze your descriptions and
+																		generate visuals based on your input.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="heading_block block-3" role="presentation" width="100%">
+														<tr>
+															<td class="pad"
+																style="padding-top:16px;text-align:center;width:100%;">
+																<h2
+																	style="margin: 0; color: #000000; direction: ltr; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0; ">
+																	<strong>Getting Started: No Art Skills
+																		Required!</strong>
+																</h2>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-4" role="presentation"
+														style="   word-break: break-word;" width="100%">
+														<tr>
+															<td class="pad">
+																<div
+																	style="color:black;direction:ltr;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;  ">
+																	<p style="margin: 0; margin-bottom: 16px;">The
+																		beauty of AI image generators is that they're
+																		beginner-friendly. You don't need artistic
+																		expertise to create stunning visuals. All you
+																		need is your imagination! Here's how it works:
+																	</p>
+																	<p style="margin: 0;  margin-bottom: 16px;">
+																		<strong>1.Fire Up Your Creativity
+																			Engine:</strong> Think of an image you'd
+																		love to see come to life. It can be anything – a
+																		majestic dragon soaring through the clouds, a
+																		futuristic cityscape bathed in neon lights, or
+																		even a grumpy cat napping on a rainbow. Let your
+																		imagination run wild!
+																	</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong>2.Craft Your Prompt:</strong> This is
+																		where your words become the artist's brush. The
+																		prompt is a sentence or two describing the image
+																		you want to generate. Here are some tips for
+																		crafting effective prompts:
+																	</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong> Be Specific:</strong> Instead of just
+																		saying "cat," describe a "fluffy Persian cat
+																		wearing a tiny crown, perched on a velvet
+																		armchair." The more details you provide, the
+																		clearer the image will be for the AI.
+																	</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong>Use Vivid Language:</strong> Instead of
+																		"blue sky," try "a clear azure sky with fluffy
+																		white clouds." Descriptive language helps the AI
+																		understand the mood and atmosphere you desire.
+																	</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong>Reference Styles:</strong> Want your
+																		image to look like a classic painting? Include
+																		keywords like "oil painting on canvas" in your
+																		prompt. Many AI image generators offer a variety
+																		of artistic styles to choose from.
+																	</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong>3.Let the AI Work its Magic:</strong>
+																		Once you've crafted your perfect prompt, feed it
+																		into the AI image generator. The program will
+																		analyze your words and generate an image based
+																		on its vast database of images and artistic
+																		techniques.
+																	</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong>4.Refine and Repeat (Optional):</strong>
+																		Most AI image generators allow you to make
+																		adjustments. You can tweak your prompt, add
+																		details, or choose from variations of the
+																		generated image to achieve your desired result.
+																		Don't be afraid to experiment!
+																	</p>
+																	<p style="margin: 0;"> </p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="heading_block block-5" role="presentation" width="100%">
+														<tr>
+															<td class="pad"
+																style="padding-bottom:5px;padding-right:10px;padding-top:10px;text-align:center;width:100%;">
+																<h2
+																	style="margin: 0; color: black; direction: ltr; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	<strong>Beyond the Basics: Exploring the
+																		Potential</strong>
+																</h2>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-3"
+						role="presentation" width="100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation"
+										style="   background-color: #ffffff; border-radius: 0; color: #000000; width: 680px; margin: 0 auto;"
+										width="680">
+										<tbody>
+											<tr>
+												<td class="column column-1"
+													style="   font-weight: 400; text-align: left; border-bottom: 30px solid transparent; border-left: 30px solid transparent; border-right: 30px solid transparent; border-top: 30px solid transparent; padding-left: 5px; vertical-align: top;"
+													width="100%">
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-1" role="presentation"
+														style="   word-break: break-word;" width="100%">
+														<tr>
+															<td class="pad"
+																style="padding-bottom:25px;padding-right:10px;">
+																<div
+																	style="color:black;direction:ltr;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;">
+																	<p style="margin: 0; margin-bottom: 16px;">AI image
+																		generators are more than just fun toys. Here are
+																		some ways you can use them to enhance your
+																		creativity:</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong>Brainstorming Ideas:</strong>Stuck on a
+																		creative block? Use AI image generators to
+																		visualize different concepts and spark new ideas
+																		for your next project.
+																	</p>
+																	<p style="margin: 0; margin-bottom: 16px;">
+																		<strong>Concept Art
+																			Creation:</strong>AI-generated images can
+																		be a great starting point for concept art for
+																		games, illustrations, or even storyboards.
+																	</p>
+																	<p style="margin: 0;"><strong>Mood Board
+																			Inspiration:</strong>Need to capture a
+																		specific aesthetic? Generate images that embody
+																		the mood and atmosphere you're aiming for.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<div class="spacer_block block-2"
+														style="height:50px;line-height:50px;font-size:1px;"></div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-4"
+						role="presentation" width="100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation"
+										style="   background-color: #ffffff; border-radius: 0; color: #000000; width: 680px; margin: 0 auto;"
+										width="680">
+										<tbody>
+											<tr>
+												<td class="column column-1"
+													style="   font-weight: 400; text-align: left; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
+													width="100%">
+													<div class="spacer_block block-1"
+														style="height:50px;line-height:50px;font-size:1px;"> </div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-5"
+						role="presentation" style="   background-color: #ffffff;" width="100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation"
+										style="   background-color: #ffffff; color: #000000; width: 680px; margin: 0 auto;"
+										width="680">
+										<tbody>
+											<tr>
+												<td class="column column-1"
+													style="   font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top; border-top: 0px; border-right: 0px; border-bottom: 0px; border-left: 0px;"
+													width="100%">
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="icons_block block-1" role="presentation" width="100%">
+														<tr>
+															<td class="pad"
+																style="vertical-align: middle; color: #1e0e4b; font-family: 'Inter', sans-serif; font-size: 15px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
+																<table cellpadding="0" cellspacing="0"
+																	role="presentation" width="100%">
+																	<tr>
+																		<td class="alignment"
+																			style="vertical-align: middle; text-align: center;">
+																			<!--[if vml]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt; "><![endif]-->
+																			<!--[if !vml]><!-->
+																			<table cellpadding="0" cellspacing="0"
+																				class="icons-inner" role="presentation"
+																				style="   display: inline-block; margin-right: -4px; padding-left: 0px; padding-right: 0px;">
+																				<!--<![endif]-->
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table><!-- End -->
+	<footer>
+		<div class="footercontainer">
+			<div class="socialIcons">
+				<a href="https://www.facebook.com/" target="_blank"><i class=" fa-brands fa-facebook"></i></a>
+				<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.youtube.com/" target="_blank"><i class=" fa-brands fa-youtube"></i></a>
+			</div>
+			<div class="footerNav">
+				<ul>
+					<li><a href="Terms and conditions.html">Terms and conditions</a></li>
+					<li><a href="About us.html">About us</a></li>
+					<li><a href="Privacy Policy.html">Privacy Policy</a></li>
+					<li><a href="Disclaimer.html">Disclamer</a></li>
+					<li><a href="Contact us.html">Contact us</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="footerBottom">
+			<p>Copyright © 2024 All Rights Reserved | Designed by <span class="designer">Varun & Shalika</span>
+		</div>
+	</footer>
+</body>
+
+</html>

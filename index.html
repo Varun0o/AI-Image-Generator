@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css">
+  <!-- == icon == -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <!-- ===== Boxicons CSS ===== -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <!-- ===== For Site Icon ===== -->
+  <link rel="icon" type="image/x-icon" href="/images/icon.png">
+
+  <title>AI Image Generator By HashyBot</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      <span class="logo navLogo"><a href="index.html">HashyBot</a></span>
+
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="index.html">HashyBot</a></span>
+          <i class='bx bx-x siderbarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="Chat.html">AI Chat</a></li>
+          <li><a href="how.html">How to use</a></li>
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-moon moon'></i>
+          <i class='bx bx-sun sun'></i>
+        </div>
+
+        <div class="searchBox">
+          <div class="searchToggle">
+            <i class='bx bx-x cancel'></i>
+            <i class='bx bx-search search'></i>
+          </div>
+
+          <div class="search-field">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="script1.js"></script>
+
+  <section class="image-generator">
+    <div class="content">
+      <h1>AI Image Generator</h1>
+      <p>Convert your text into an image within a second using this AI Image Generator tool.</p>
+      <form action="#" class="generate-form">
+        <input class="prompt-input" type="text" placeholder="Describe what you want to see" required>
+        <div class="controls">
+          <select class="img-quantity">
+            <option value="1">1 Image</option>
+            <option value="2">2 Images</option>
+            <option value="3">3 Images</option>
+            <option value="4" selected>4 Images</option>
+          </select>
+          <button type="submit" class="generate-btn">Generate</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="image-gallery">
+    <div class="img-card"><img src="images/img-1.jpg" alt="image"></div>
+    <div class="img-card"><img src="images/img-2.jpg" alt="image"></div>
+    <div class="img-card"><img src="images/img-3.jpg" alt="image"></div>
+    <div class="img-card"><img src="images/img-4.jpg" alt="image"></div>
+  </section>
+  <script src="script.js"></script>
+  <div class="wrapper">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq">
+      <button class="accordion">
+        What is an AI image generator
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          An AI image generator uses advanced algorithms to create and modify images based on user inputs, providing
+          unique and customizable visual content.
+        </p>
+      </div>
+    </div>
+    <div class="faq">
+      <button class="accordion">
+        How does it work?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          The generator utilizes deep learning models to analyze patterns and generate images. Users can input
+          parameters, such as style, color, or theme, to influence the output.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        What types of images can be generated?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          The AI can generate a variety of images, including landscapes, abstract art, portraits, and more. The range
+          depends on the capabilities of the specific AI model.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Can I use the generated images for commercial purposes?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Check the website's terms of use. Some platforms may have restrictions on commercial use or provide premium
+          plans for such purposes.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        How long does it take to generate an image?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          The time varies based on the complexity of the image and the processing power of the AI. Simple images may
+          generate quickly, while more intricate designs could take longer.
+
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Are the generated images unique?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Yes, the AI generates images based on the input parameters, resulting in unique compositions. However, it's
+          essential to note that others might use similar parameters, leading to variations.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <footer>
+    <div class="footercontainer">
+      <div class="socialIcons">
+        <a href="https://www.facebook.com/" target="_blank"><i class=" fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class=" fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="Terms and conditions.html">Terms and conditions</a></li>
+          <li><a href="About us.html">About us</a></li>
+          <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+          <li><a href="Disclaimer.html">Disclamer</a></li>
+          <li><a href="Contact us.html">Contact us</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footerBottom">
+      <p>Copyright © 2024 All Rights Reserved | Designed by <span class="designer">Varun & Shalika</span>
+    </div>
+  </footer>
+
+</body>
+
+</html>

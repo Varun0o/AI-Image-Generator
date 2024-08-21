@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+	<title></title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<!-- Font awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<!-- == icon == -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+	<!-- css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- ===== Boxicons CSS ===== -->
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+	<!-- ===== For Site Icon ===== -->
+	<link rel="icon" type="image/x-icon" href="/images/icon.png">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		.desktop_hide,
+		.desktop_hide table {
+			display: none;
+			max-height: 0px;
+			overflow: hidden;
+		}
+
+		.image_block img+div {
+			display: none;
+		}
+
+		@media (max-width:690px) {
+			.desktop_hide table.icons-inner {
+				display: inline-block !important;
+			}
+
+			.icons-inner {
+				text-align: center;
+			}
+
+			.icons-inner td {
+				margin: 0 auto;
+			}
+
+			.mobile_hide {
+				display: none;
+			}
+
+			.row-content {
+				width: 100% !important;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+
+			.mobile_hide {
+				min-height: 0;
+				max-height: 0;
+				max-width: 0;
+				overflow: hidden;
+				font-size: 0px;
+			}
+
+			.desktop_hide,
+			.desktop_hide table {
+				display: table !important;
+				max-height: none !important;
+			}
+
+			.row-1 .column-1 .block-3.paragraph_block td.pad>div {
+				text-align: left !important;
+				font-size: 14px !important;
+			}
+
+			.row-1 .column-1 .block-2.heading_block h1,
+			.row-2 .column-1 .block-1.heading_block h2,
+			.row-2 .column-1 .block-5.heading_block h2 {
+				text-align: left !important;
+			}
+
+			.row-1 .column-1 .block-2.heading_block h1 {
+				font-size: 32px !important;
+			}
+
+			.row-2 .column-1 .block-2.paragraph_block td.pad>div,
+			.row-2 .column-1 .block-4.paragraph_block td.pad>div,
+			.row-2 .column-1 .block-6.paragraph_block td.pad>div,
+			.row-2 .column-1 .block-8.paragraph_block td.pad>div {
+				text-align: left !important;
+				font-size: 16px !important;
+			}
+
+			.row-2 .column-1 .block-1.heading_block h2,
+			.row-2 .column-1 .block-5.heading_block h2 {
+				font-size: 20px !important;
+			}
+
+			.row-1 .column-1 {
+				padding: 0 24px 16px !important;
+			}
+
+			.row-2 .column-1 {
+				padding: 0 24px !important;
+			}
+		}
+	</style>
+</head>
+
+<body style="background-color: #f8f6ff; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+	<nav>
+		<div class="nav-bar">
+			<i class='bx bx-menu sidebarOpen'></i>
+			<span class="logo navLogo"><a href="Home.html">HashyBot</a></span>
+
+			<div class="menu">
+				<div class="logo-toggle">
+					<span class="logo"><a href="Home.html">HashyBot</a></span>
+					<i class='bx bx-x siderbarClose'></i>
+				</div>
+
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="Chat.html">AI Chat</a></li>
+					<li><a href="how.html">How to use</a></li>
+				</ul>
+			</div>
+
+			<div class="darkLight-searchBox">
+				<div class="dark-light">
+					<i class='bx bx-moon moon'></i>
+					<i class='bx bx-sun sun'></i>
+				</div>
+
+				<div class="searchBox">
+					<div class="searchToggle">
+						<i class='bx bx-x cancel'></i>
+						<i class='bx bx-search search'></i>
+					</div>
+
+					<div class="search-field">
+						<input type="text" placeholder="Search...">
+						<i class='bx bx-search'></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<script src="script1.js"></script>
+	<br>
+	<table border="0" cellpadding="0" cellspacing="0" class="nl-container" role="presentation" Style="background-color:
+		#f8f6ff; background-image: none; background-position: top left; background-size: auto; background-repeat:
+		no-repeat;" width="100%">
+		<tbody>
+			<tr>
+				<td>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-1"
+						role="presentation" " width=" 100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation" Style="background-color: #ffffff;
+										border-radius: 0; color: #000000; width: 670px; margin: 0 auto;" width="670">
+										<tbody>
+											<tr>
+												<td class="column column-1" Style="font-weight: 400; text-align: left;
+													padding-left: 48px; padding-right: 48px; vertical-align: top;
+													border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:
+													0px;" width="100%">
+													<div class="spacer_block block-1"
+														style="height:48px;line-height:48px;font-size:1px;"></div>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="heading_block block-2" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad"
+																style="padding-bottom:8px;text-align:center;width:100%;">
+																<h1
+																	style="margin: 0; color: #292929; direction: ltr; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	Beyond Imagination: Using AI Art Generators for
+																	Practical Applications</h1>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-3" role="presentation" word-break:
+														break-word;" width="100%">
+														<tr>
+															<td class="pad" style="padding-bottom:12px;">
+																<div
+																	style="color:black;direction:ltr;font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;">
+																	<p style="margin: 0;">AI image generators have
+																		exploded onto the scene, offering a
+																		revolutionary way to bring ideas to life. But
+																		beyond the fantastical creatures and surreal
+																		landscapes, these tools hold immense potential
+																		for practical applications across various
+																		fields. Let's delve into how AI art generators
+																		can become valuable assets in your creative
+																		toolbox.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="image_block block-4" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad" style="width:100%;">
+																<div align="center" class="alignment"
+																	style="line-height:10px">
+																	<div style="max-width: 574px;"><img
+																			src="images/pexels-thisisengineering-3861969.jpg"
+																			style="display: block; height: auto; border: 0; width: 100%;"
+																			width="574" /></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-2"
+						role="presentation" " width=" 100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation" Style="background-color: #ffffff;
+										border-radius: 0; color: #000000; width: 670px; margin: 0 auto;" width="670">
+										<tbody>
+											<tr>
+												<td class="column column-1" Style="font-weight: 400; text-align: left;
+													padding-left: 48px; padding-right: 48px; padding-top: 48px;
+													vertical-align: top; border-top: 0px; border-right: 0px;
+													border-bottom: 0px; border-left: 0px;" width="100%">
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="heading_block block-1" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad" style="text-align:center;width:100%;">
+																<h2
+																	style="margin: 0; color: #000000; direction: ltr; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	<strong>1. Brainstorming and Visualizing Marketing
+																		Ideas:</strong>
+																</h2>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-2" role="presentation" word-break:
+														break-word;" width="100%">
+														<tr>
+															<td class="pad" style="padding-top:16px;">
+																<div
+																	style="color:black;direction:ltr;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;">
+																	<p style="margin: 0;">Struggling to visualize that
+																		perfect marketing campaign image? AI image
+																		generators can be your brainstorming partner.
+																		Imagine generating social media graphics
+																		featuring a product in unique settings or
+																		conjuring captivating visuals for your next
+																		advertisement. Need a logo concept to represent
+																		your brand? With a few keywords, you can explore
+																		various logo styles and get a head start on
+																		crafting a memorable brand identity.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="10" cellspacing="0"
+														class="heading_block block-3" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad">
+																<h2
+																	style="margin: 0; color: black; direction: ltr; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	<strong>2. Creating Concept Art for Games or
+																		Illustrations:</strong>
+																</h2>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-4" role="presentation" word-break:
+														break-word;" width="100%">
+														<tr>
+															<td class="pad" style="padding-top:8px;">
+																<div
+																	style="color:black;direction:ltr;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;">
+																	<p style="margin: 0;">Concept art is the foundation
+																		for building immersive game worlds and
+																		captivating illustrations. AI image generators
+																		can be a concept artist's dream companion.
+																		Describe the environment you envision for your
+																		game, from a bustling cyberpunk cityscape to a
+																		mystical underwater kingdom, and generate
+																		visuals that set the tone and inspire further
+																		development. Similarly, for illustrators, AI art
+																		can help visualize characters, scenes, and
+																		objects, allowing them to refine and iterate
+																		before diving into detailed artwork.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="heading_block block-5" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad"
+																style="padding-top:16px;text-align:center;width:100%;">
+																<h2
+																	style="margin: 0; color: #000000; direction: ltr; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	<strong>3. Generating Unique Social Media
+																		Graphics:</strong>
+																</h2>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-6" role="presentation" word-break:
+														break-word;" width="100%">
+														<tr>
+															<td class="pad" style="padding-top:16px;">
+																<div
+																	style="color:black;direction:ltr;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;">
+																	<p style="margin: 0;">Standing out in the
+																		ever-crowded social media landscape is crucial.
+																		AI image generators can be your secret weapon
+																		for creating eye-catching graphics. Need a
+																		social media post to promote a new product
+																		launch? Generate visuals that showcase the
+																		product in a unique and engaging way. Want to
+																		create infographics or explainer videos? Use AI
+																		to generate visuals that effectively communicate
+																		your message and grab attention</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="10" cellspacing="0"
+														class="heading_block block-7" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad">
+																<h2
+																	style="margin: 0; color: black; direction: ltr; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: normal; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0;">
+																	<strong>4. Designing Product Mockups or Mood
+																		Boards:</strong>
+																</h2>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="paragraph_block block-8" role="presentation" word-break:
+														break-word;" width="100%">
+														<tr>
+															<td class="pad"
+																style="padding-bottom:24px;padding-top:8px;">
+																<div
+																	style="color:black;direction:ltr;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0px;line-height:150%;text-align:left;">
+																	<p style="margin: 0;">Whether you're a product
+																		designer or simply brainstorming ideas for your
+																		home renovation, AI image generators can
+																		streamline your workflow. Imagine generating
+																		mockups of your product design concept in
+																		different settings or creating mood boards with
+																		various design elements to visualize your dream
+																		space. This allows for quick exploration of
+																		different possibilities before committing to a
+																		final design.Lorem ipsum dolor sit amet
+																		consectetur. Sapien diam quis sapien sit nec ut
+																		porttitor. Lorem est imperdiet sapien enim lorem
+																		proin sit. Sed consectetur urna ullamcorper
+																		justo lectus nec lacus eu rhoncus. Urna odio ac
+																		cursus netus tristique libero cursus
+																		pellentesque.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="divider_block block-9" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad" style="padding-top:24px;">
+																<div align="center" class="alignment">
+																	<table border="0" cellpadding="0" cellspacing="0"
+																		role="presentation" "
+																		width=" 100%">
+																		<tr>
+																			<td class="divider_inner"
+																				style="font-size: 1px; line-height: 1px; border-top: 1px solid #dddddd;">
+																				<span> </span>
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="row row-3"
+						role="presentation" background-color: #ffffff;" width="100%">
+						<tbody>
+							<tr>
+								<td>
+									<table align="center" border="0" cellpadding="0" cellspacing="0"
+										class="row-content stack" role="presentation" Style="background-color: #ffffff; color:
+										#000000; width: 670px; margin: 0 auto;" width="670">
+										<tbody>
+											<tr>
+												<td class="column column-1" Style="font-weight: 400; text-align: left;
+													padding-bottom: 5px; padding-top: 5px; vertical-align: top;
+													border-top: 0px; border-right: 0px; border-bottom: 0px; border-left:
+													0px;" width="100%">
+													<table border="0" cellpadding="0" cellspacing="0"
+														class="icons_block block-1" role="presentation" "
+														width=" 100%">
+														<tr>
+															<td class="pad"
+																style="vertical-align: middle; color: #1e0e4b; font-family: 'Inter', sans-serif; font-size: 15px; padding-bottom: 5px; padding-top: 5px; text-align: center;">
+																<table cellpadding="0" cellspacing="0"
+																	role="presentation" "
+																	width=" 100%">
+																	<tr>
+																		<td class="alignment"
+																			style="vertical-align: middle; text-align: center;">
+																			<!--[if vml]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><![endif]-->
+																			<!--[if !vml]><!-->
+																			<table cellpadding="0" cellspacing="0"
+																				class="icons-inner" role="presentation"
+																				Style="display: inline-block; margin-right:
+																				-4px; padding-left: 0px; padding-right:
+																				0px;">
+																				<!--<![endif]-->
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table><!-- End -->
+	<footer>
+		<div class="footercontainer">
+			<div class="socialIcons">
+				<a href="https://www.facebook.com/" target="_blank"><i class=" fa-brands fa-facebook"></i></a>
+				<a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://www.youtube.com/" target="_blank"><i class=" fa-brands fa-youtube"></i></a>
+			</div>
+			<div class="footerNav">
+				<ul>
+					<li><a href="Terms and conditions.html">Terms and conditions</a></li>
+					<li><a href="About us.html">About us</a></li>
+					<li><a href="Privacy Policy.html">Privacy Policy</a></li>
+					<li><a href="Disclaimer.html">Disclamer</a></li>
+					<li><a href="Contact us.html">Contact us</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="footerBottom">
+			<p>Copyright © 2024 All Rights Reserved | Designed by <span class="designer">Varun & Shalika</span>
+		</div>
+	</footer>
+</body>
+
+</html>
